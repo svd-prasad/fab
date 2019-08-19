@@ -1,11 +1,11 @@
-import webpack from 'webpack';
+
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import paths from './paths';
 import rules from './rules';
 
 module.exports = {
-    entry: "/Users/prasadkotikalapudi/Downloads/react-bolt-master/src/index.js",
+    entry: "/Users/prasadkotikalapudi/Desktop/git/fab/src/index.js",
     module: {
     rules: [
       {
@@ -45,7 +45,7 @@ module.exports = {
     plugins: [
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
-            template: "/Users/prasadkotikalapudi/Downloads/react-bolt-master/src/index.html",
+            template: "/Users/prasadkotikalapudi/Desktop/git/fab/src/index.html",
             minify: {
                 collapseInlineTagWhitespace: true,
                 collapseWhitespace: true,

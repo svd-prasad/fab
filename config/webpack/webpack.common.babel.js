@@ -5,7 +5,7 @@ import paths from './paths';
 import rules from './rules';
 
 module.exports = {
-    entry: "/Users/prasadkotikalapudi/Desktop/git/fab/src/index.js",
+    entry: paths.entryPath,
     module: {
     rules: [
       {
@@ -45,7 +45,7 @@ module.exports = {
     plugins: [
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
-            template: "/Users/prasadkotikalapudi/Desktop/git/fab/src/index.html",
+            template: paths.templatePath,
             minify: {
                 collapseInlineTagWhitespace: true,
                 collapseWhitespace: true,

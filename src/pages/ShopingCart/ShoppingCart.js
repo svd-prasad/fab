@@ -10,13 +10,13 @@ const ShoppingCart = (props) => {
                     <div className="card shopping-cart">
                         <div className="card-header bg-dark text-light">
                             <i className="fa fa-shopping-cart pr-2" aria-hidden="true"></i>
-                            Shipping cart
+                            Shopping cart
                             <div className="clearfix"></div>
                         </div>
                         <div className="card-body">
                             {props.cartItemCount ? props.cartItems.map(cart => (
                                 <CartItem {...cart} img={cart.images[0]} />
-                            )) : <h1 className="display-4 mt-5 text-center">There is no product in your cart</h1> }
+                            )) : <h6 className="display-5 mt-5 text-center">There are no products in your cart</h6> }
                         </div>
                         <div className="card-footer">
                             <div className="pull-right" style={{margin: '10px'}}>

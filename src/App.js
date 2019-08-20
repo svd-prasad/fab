@@ -28,7 +28,7 @@ class App extends Component {
                         return <Redirect to={'/products'}/>
                     }}/>
                     <Route exact path={'/products'} component={Home}/>
-                    <Route exact path={'/products/:id'} component={ProductDetail}/>
+                    <Route exact path={'/products/:title'} component={ProductDetail}/>
                     <Route exact patr={'/cart'} component={ShoppingCart}/>
                 </Switch>
                 <Footer/>

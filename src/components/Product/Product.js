@@ -65,7 +65,7 @@ const Product = (props) => {
 
     return (
         <div className="card h-100 product">
-            <Link to={`/products/${id}`} className="product__link"><img
+            <Link to={`/products/${title}`} className="product__link"><img
                 onMouseMove={handleImageChange}
                 onMouseOut={handleMouseOut}
                 onTouchMove={handleImageChange}
@@ -75,7 +75,7 @@ const Product = (props) => {
             </Link>
             <div className="card-body product__text">
                 <h4 className="card-title product__title">
-                    <Link to={`/products/${id}`}>{title}</Link>
+                    <Link to={`/products/${title}`}>{title}</Link>
                 </h4>
                 <h5 className="product__price">₹{formatMoney(price)}</h5>
                 <p className="card-text product__description">{description}</p>

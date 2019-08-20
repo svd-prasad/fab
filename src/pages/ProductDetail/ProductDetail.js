@@ -21,7 +21,7 @@ const ProductDetail = (props) => {
 
 const mapStateToProps = (state, props) =>  {
 
-    const product = state.shop.products.find(product => product.id === +props.match.params.id);
+    const product = state.shop.products.find(product => product.title == +props.match.params.title);
 
     return {
         product
